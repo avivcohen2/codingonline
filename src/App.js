@@ -21,7 +21,7 @@ class App extends Component {
     }
 
     fetchCodeBlocks() {
-      fetch('http://localhost:3000')
+      fetch('codingonline-server-production.up.railway.app')
       .then(response => response.json())
       .then(codeblocks => {
         this.setState({ codeblocksArr: codeblocks });
