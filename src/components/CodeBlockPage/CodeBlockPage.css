@@ -1,0 +1,13 @@
+.container {
+    width: 80%; /* Adjust the width of the container as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+  }
+  
+  .resizable-textarea {
+    width: 100%; /* Make the textarea fill the container width */
+    height: 200px; /* Set the initial height */
+    resize: vertical; /* Allow vertical resizing */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
