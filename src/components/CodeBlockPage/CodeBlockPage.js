@@ -45,7 +45,7 @@ const CodeBlockPage = ({ codeblocks }) => {
                 setCurSolution(solution);
             })
         }
-    }, [socket]);
+    }, [socket, curCodeBlock]);
 
     function handleCodeChange(event) {
         socket.emit('solution', event.target.value);
