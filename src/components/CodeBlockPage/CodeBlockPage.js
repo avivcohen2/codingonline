@@ -5,6 +5,7 @@ import hljs from 'highlight.js';
 import './CodeBlockPage.css';
 import 'highlight.js/styles/dark.css';
 import io from 'socket.io-client'
+const PORT = process.env.PORT || 3000;
 
 const CodeBlockPage = ({ codeblocks }) => {
     console.log('in codeblockpage:', codeblocks)
@@ -19,7 +20,7 @@ const CodeBlockPage = ({ codeblocks }) => {
         console.log('new connection')
         hljs.highlightElement(textareaRef.current);
 
-        const newSocket = io('http://localhost:3000');
+        const newSocket = io(PORT);
         setSocket(newSocket);
 
         return () => {
