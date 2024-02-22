@@ -21,7 +21,7 @@ class App extends Component {
     }
 
     fetchCodeBlocks() {
-      fetch('codingonline-server-production.up.railway.app')
+      fetch('https://codingonline-rsss.onrender.com')
       .then(response => response.json())
       .then(codeblocks => {
         this.setState({ codeblocksArr: codeblocks });
