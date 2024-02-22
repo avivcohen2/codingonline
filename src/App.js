@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import HomePage from './components/HomePage/HomePage';
 import CodeBlockPage from './components/CodeBlockPage/CodeBlockPage';
-const fetch = require('node-fetch')
 
 class App extends Component {
     constructor(props) {
