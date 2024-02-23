@@ -19,7 +19,7 @@ const CodeBlockPage = ({ codeblocks }) => {
         console.log('new connection')
         hljs.highlightElement(textareaRef.current);
 
-        const newSocket = io('https://codingonline-rsss.onrender.com');
+        const newSocket = io('codingonline-server-production.up.railway.app');
         setSocket(newSocket);
 
         return () => {
