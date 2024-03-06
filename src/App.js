@@ -37,12 +37,12 @@ class App extends Component {
             <Routes>
                   <Route
                       exact
-                      path="/"
+                      path="/codeblocks"
                       element={<HomePage codeblocks={this.state.codeblocksArr}/>}
                   />
                   <Route
                       exact
-                      path="codeblock/:id"
+                      path="codeblocks/:id"
                       element={<CodeBlockPage codeblocks={this.state.codeblocksArr}/>}
                   />  
             </Routes>
